@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export const Missions = () => {
-  return (
-    <div>Missions</div>
-  )
-}
+export const Missions = () => (
+  <div>Missions</div>
+);
 
-export default Missions
+export default Missions;
