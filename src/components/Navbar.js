@@ -10,7 +10,7 @@ export const Navbar = () => (
         <h1>Space Traveler&apos;s Hub</h1>
       </div>
       <div className="links">
-        <NavLink to="/">Rockets</NavLink>
+        <NavLink to="/Rocket">Rockets</NavLink>
         <NavLink to="/Missions">Missions</NavLink>
         <div>
           <hr />
