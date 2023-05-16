@@ -4,17 +4,19 @@ import logo from '../imgs/planet1.png';
 
 export const Navbar = () => (
   <div className="nav">
-    <div className="logo">
-      <div><img src={logo} alt="logo" /></div>
-      <h1>Space Travelers&apos;Hub</h1>
-    </div>
-    <div className="links">
-      <Link to="/">Rockets</Link>
-      <Link to="/Missions">Missions</Link>
-      <div>
-        <hr />
+    <div className="container nav-container">
+      <div className="logo">
+        <div><img src={logo} alt="logo" /></div>
+        <h1>Space Traveler&apos;s Hub</h1>
       </div>
-      <Link to="/MyProfile">My Profile</Link>
+      <div className="links">
+        <Link to="/">Rockets</Link>
+        <Link to="/Missions">Missions</Link>
+        <div>
+          <hr />
+        </div>
+        <Link to="/MyProfile">My Profile</Link>
+      </div>
     </div>
   </div>
 );
