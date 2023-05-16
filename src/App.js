@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Missions } from './components/Missions';
 import { MyProfile } from './components/MyProfile';
 import { Rockets } from './components/Rockets';
+import Dragons from './components/Dragons';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/Rocket" element={<Rockets />} />
           <Route path="/Missions" element={<Missions />} />
           <Route path="/MyProfile" element={<MyProfile />} />
+          <Route path="/Dragons" element={<Dragons />} />
         </Routes>
       </div>
     </div>
