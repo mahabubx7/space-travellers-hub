@@ -9,15 +9,15 @@ h1 {
   margin: 0;
 }
 
-.logo {
-  gap: 15px;
-}
-
 hr {
   width: 1px;
   height: 15px;
   background-color: #0c0c0c;
   transform: scaleY(-1);
+}
+
+.logo {
+  gap: 15px;
 }
 
 .container {
@@ -58,6 +58,10 @@ hr {
   text-decoration: none;
   color: #067ff1;
   font-size: 1.5rem;
+}
+
+.links a.active {
+  text-decoration: underline;
 }
 
 .profile-page .info-card {
