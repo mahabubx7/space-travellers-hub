@@ -109,6 +109,10 @@ hr {
   width: 50px;
 }
 
+table {
+  width: 100%;
+}
+
 /* === RESPONSIVE CSS === */
 @media screen and (max-width: 1100px) {
   .container {
