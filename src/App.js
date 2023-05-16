@@ -9,11 +9,14 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Rockets />} />
-        <Route path="/Missions" element={<Missions />} />
-        <Route path="/MyProfile" element={<MyProfile />} />
-      </Routes>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Rockets />} />
+          <Route path="/Rocket" element={<Rockets />} />
+          <Route path="/Missions" element={<Missions />} />
+          <Route path="/MyProfile" element={<MyProfile />} />
+        </Routes>
+      </div>
     </div>
   );
 }
