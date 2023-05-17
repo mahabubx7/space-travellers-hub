@@ -18,6 +18,8 @@ hr {
 
 .logo {
   gap: 15px;
+  text-decoration: none;
+  color: #0c0c0c;
 }
 
 .container {
