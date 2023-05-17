@@ -1,27 +1,17 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { createSlice } from '@reduxjs/toolkit';
+import { getMissions } from '../../apiSlice';
 
-const initialState = [
-  {
-    mission_name: 'test1',
-    description: 'go to see the web page',
-    mission_id: 1,
-  },
-  {
-    mission_name: 'test2',
-    description: 'go to see the web page',
-    mission_id: 2,
-  },
-  {
-    mission_name: 'test3',
-    description: 'go to see the web page',
-    mission_id: 3,
-  },
-];
+const initialState = [];
 const Missions = createSlice({
   name: 'Missions',
   initialState,
   reducers: {},
-  extraReducers: {},
+  extraReducers: (builder) => {
+    builder.addCase(getMissions.fulfilled, (state, action) => {
+      state.push(...action.payload);
+    });
+  },
 });
 
 export default Missions.reducer;
