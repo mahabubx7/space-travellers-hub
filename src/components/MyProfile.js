@@ -6,17 +6,18 @@ const MyProfile = () => {
   const data = rockets.data.filter((rocket) => rocket.reserved === true);
   const { value } = useSelector((state) => state.dragons);
   const reservedDragons = value.filter((item) => item.reserved);
+  const Mission = useSelector((store) => store.missions);
+  const missionData = Mission.filter((elm) => elm.reserved === true);
 
   return (
     <div className="profile-page">
       <div className="missions info-card">
         <h3>my missions</h3>
-        <ul className="profile-list">
-          <li>Telstar</li>
-          <li>SES</li>
-          <li>AsiaSat</li>
-          <li>ABS</li>
-        </ul>
+        {missionData.length > 0 ? (
+          <ul className="profile-list">
+            {missionData.map((mission) => <li key={mission.id}>{mission.name}</li>)}
+          </ul>
+        ) : (<p className="profile-list">No Mission join yet!</p>)}
       </div>
       <div className="rockets info-card">
         <h3>my rockets</h3>

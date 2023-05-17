@@ -191,24 +191,22 @@ button.btn-mission {
   width: 120px;
 }
 
-.btn_join {
-  /* background-color: #a6b3c052; */
-  color: rgb(0, 0, 0);
-  border: solid black;
+.btn_join,
+.btn_leave {
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
   padding: 10px;
 }
 
+.btn_join {
+  color: rgb(0, 0, 0);
+  border: solid black;
+}
+
 .btn_leave {
-  /* background-color: #c94230d3; */
   color: rgb(243, 12, 12);
   border: solid red;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 10px;
 }
 
 .member {
