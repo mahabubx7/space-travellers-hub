@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
 
 function MissionsList({
@@ -33,7 +34,7 @@ function MissionsList({
 MissionsList.propTypes = {
   mission: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default MissionsList;
