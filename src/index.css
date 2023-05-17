@@ -74,17 +74,29 @@ hr {
 .btn-reserve {
   background-color: #067ff1;
   padding: 0.75rem 1.25rem;
-  border: none;
   outline: 0;
   border-radius: 4px;
   color: white;
   text-transform: capitalize;
   cursor: pointer;
   transition: all 0.2s ease-in;
+  border: 1px solid #067ff1;
+}
+
+.btn-reserve.booked {
+  background-color: white;
+  color: #0c0c0c;
+  border: 1px solid #0c0c0c;
 }
 
 .btn-reserve:hover {
   background-color: #4883b9;
+}
+
+.btn-reserve.booked:hover {
+  background-color: lightgray;
+  color: #0c0c0c;
+  border: 1px solid #0c0c0c;
 }
 
 .links {
