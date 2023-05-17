@@ -1,20 +1,13 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { join } from '../redux/slices/missions/MissionsSlice';
 
 function MissionsList({ mission, description, id }) {
-  // const statusCheck = () => {
-  //   if (status) {
-  //     return 'Active Member';
-  //   }
-  //   return 'Not a Member';
-  // };
-  // const missionCheck = () => {
-  //   if (status) {
-  //     return 'Leave Mission';
-  //   }
-  //   return 'Join Mission';
-  // };
+  const dispatch = useDispatch();
+  const handleClick = () => {
+    dispatch(join(id));
+  };
   return (
     <tr>
       <td>{mission}</td>
@@ -23,7 +16,7 @@ function MissionsList({ mission, description, id }) {
         Active Member
       </td>
       <td colSpan={6}>
-        <button type="button" id={id} className="btn-mission">
+        <button type="button" onClick={() => handleClick()}>
           Join Mission
         </button>
       </td>

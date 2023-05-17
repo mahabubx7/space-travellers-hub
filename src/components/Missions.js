@@ -27,6 +27,7 @@ export const Missions = () => {
             mission={mission.name}
             description={mission.description}
             id={mission.id}
+            reserve={mission.reserved}
           />
         ))}
       </tbody>
