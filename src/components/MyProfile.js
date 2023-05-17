@@ -22,7 +22,7 @@ const MyProfile = () => {
         <h3>my rockets</h3>
         {data.length > 0 ? (
           <ul className="profile-list">
-            {data.map((rocket) => <li key={rocket.id}>{rocket.name}</li>)}
+            {data.map((rocket) => <li key={rocket.id} data-testid="rocket-reserved">{rocket.name}</li>)}
           </ul>
         ) : (<p className="profile-list">Empty rocket reservation!</p>)}
       </div>
