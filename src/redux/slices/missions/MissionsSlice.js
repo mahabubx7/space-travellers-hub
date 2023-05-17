@@ -8,9 +8,7 @@ const Missions = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(getMissions.fulfilled, (state, action) => {
-      state.push(...action.payload);
-    });
+    builder.addCase(getMissions.fulfilled, (state, action) => action.payload);
   },
 });
 

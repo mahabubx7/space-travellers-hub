@@ -2,9 +2,7 @@ import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
 
-function MissionsList({
-  mission, description, id,
-}) {
+function MissionsList({ mission, description, id }) {
   // const statusCheck = () => {
   //   if (status) {
   //     return 'Active Member';
@@ -20,9 +18,11 @@ function MissionsList({
   return (
     <tr>
       <td>{mission}</td>
-      <td colSpan={10}>{description}</td>
-      <td>Active Member</td>
-      <td>
+      <td colSpan={4}>{description}</td>
+      <td colSpan={4} className="member">
+        Active Member
+      </td>
+      <td colSpan={6}>
         <button type="button" id={id}>
           Join Mission
         </button>

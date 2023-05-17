@@ -15,7 +15,7 @@ export const Missions = () => {
       <thead>
         <tr>
           <th>Mission</th>
-          <th colSpan={10}>Description</th>
+          <th colSpan={5}>Description</th>
           <th>Status</th>
           <th>Join/Leave</th>
         </tr>
