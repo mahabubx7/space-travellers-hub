@@ -51,6 +51,42 @@ hr {
   justify-content: space-between;
 }
 
+.rockets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.rocket-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.25rem;
+  text-transform: capitalize;
+}
+
+.rocket-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.btn-reserve {
+  background-color: #067ff1;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  outline: 0;
+  border-radius: 4px;
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.btn-reserve:hover {
+  background-color: #4883b9;
+}
+
 .links {
   margin-left: auto;
   gap: 0 1.25rem;
@@ -65,6 +101,15 @@ hr {
 .links a.active {
   text-decoration: underline;
 }
+
+.rocket-item img {
+  width: 36%;
+  max-width: 200px;
+}
+
+.rocket-info h3 { margin: 0.2rem; }
+
+.rocket-info p { margin: 0.4rem; }
 
 .profile-page .info-card {
   display: flex;
