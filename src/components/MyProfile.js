@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux';
 const MyProfile = () => {
   const rockets = useSelector((state) => state.rockets);
   const data = rockets.data.filter((rocket) => rocket.reserved === true);
+  const { value } = useSelector((state) => state.dragons);
+  const reservedDragons = value.filter((item) => item.reserved);
 
   return (
     <div className="profile-page">
@@ -22,7 +24,17 @@ const MyProfile = () => {
           <ul className="profile-list">
             {data.map((rocket) => <li key={rocket.id}>{rocket.name}</li>)}
           </ul>
-        ) : (<p>Empty rocket reservation!</p>)}
+        ) : (<p className="profile-list">Empty rocket reservation!</p>)}
+      </div>
+      <div className="dragons info-card">
+        <h3>my dragons</h3>
+        {reservedDragons.length > 0 ? (
+          <ul className="profile-list">
+            {reservedDragons.map((item) => (
+              <li key={item.id}>{item.name}</li>
+            ))}
+          </ul>
+        ) : (<p className="profile-list">Empty dragon reservation!</p>)}
       </div>
     </div>
   );

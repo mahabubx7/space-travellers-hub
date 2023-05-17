@@ -12,6 +12,7 @@ const getDragons = createAsyncThunk('getDragons', async () => {
         name: item.name,
         type: item.type,
         image: item.flickr_images[0],
+        reserved: false,
       }
     ));
   } catch (e) {
@@ -29,6 +30,7 @@ export const getRockets = createAsyncThunk('getRockets', async () => {
         type: rocket.rocket_type,
         flickr_images: rocket.flickr_images[0],
         description: rocket.description,
+        reserved: false,
       }
     ));
   } catch (err) {
