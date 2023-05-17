@@ -111,6 +111,28 @@ hr {
 
 table {
   width: 100%;
+  border: 1px solid rgb(233, 232, 232);
+}
+
+tr,
+td {
+  border: 1px solid rgb(233, 232, 232);
+  padding: 5px;
+  text-align: center;
+}
+
+button {
+  background-color: #eff0f1;
+  color: #0e0d0d;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 120px;
+}
+
+.member {
+  width: 130px;
 }
 
 /* === RESPONSIVE CSS === */
