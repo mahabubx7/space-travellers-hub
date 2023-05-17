@@ -3,7 +3,8 @@ import { getRockets } from '../../apiSlice';
 
 const initialState = {
   data: [],
-  isLoading: false,
+  loading: false,
+  isLoaded: false,
   error: null,
 };
 
@@ -32,15 +33,17 @@ export const rocketSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(getRockets.pending, (state) => {
-      state.isLoading = true;
+      state.loading = true;
     });
     builder.addCase(getRockets.fulfilled, (state, { payload }) => {
-      state.isLoading = false;
-      state.data = payload;
+      state.isLoaded = true;
+      state.loading = false;
+      state.data = [...payload];
       state.error = null;
     });
     builder.addCase(getRockets.rejected, (state, { payload }) => {
-      state.isLoading = false;
+      state.isLoaded = false;
+      state.loading = false;
       state.error = payload;
     });
   },

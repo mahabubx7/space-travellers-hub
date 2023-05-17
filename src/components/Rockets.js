@@ -4,22 +4,25 @@ import { getRockets } from '../redux/apiSlice';
 import { cancel, reserve } from '../redux/slices/rockets/RocketsSlice';
 
 const Rockets = () => {
-  const { data, isLoading, error } = useSelector((state) => state.rockets);
+  const {
+    data, isLoaded, loading, error,
+  } = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
   useEffect(() => {
+    if (isLoaded) return;
     dispatch(getRockets());
-  }, [dispatch]);
+  }, [dispatch, isLoaded]);
 
   const handleReserve = (id) => dispatch(reserve(id));
   const handleCancel = (id) => dispatch(cancel(id));
 
-  if (isLoading) return <p>Loading...</p>;
+  if (loading) return <p>Loading...</p>;
   if (error) return <p>Some went wrong!</p>;
   return (
     <div className="rockets">
       {data.map((rocket) => (
         <div key={rocket.id} className="rocket-item">
-          <img src={rocket.flickr_images[0]} alt="rocket-img" />
+          <img src={rocket.flickr_images} alt="rocket-img" />
           <div className="rocket-info">
             <h3>{rocket.name}</h3>
             <p>{rocket.description}</p>
