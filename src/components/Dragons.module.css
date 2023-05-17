@@ -1,0 +1,49 @@
+.figure {
+  display: flex;
+  gap: 0.6em;
+  width: 100%;
+}
+
+.desc {
+  margin: 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  margin-top: 1em;
+  list-style: none;
+}
+
+.btn {
+  appearance: none;
+  padding: 0.5em;
+  background-color: #0290ff;
+  color: white;
+  border: none;
+  width: fit-content;
+  border-radius: 0.2em;
+  margin-top: 0.6em;
+  cursor: pointer;
+}
+
+small {
+  background-color: darkturquoise;
+  color: white;
+  padding: 0.1em;
+  border-radius: 2px;
+  margin-right: 0.6em;
+}
+
+.image {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
