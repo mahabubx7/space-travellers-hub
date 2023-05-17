@@ -7,8 +7,10 @@ export const Missions = () => {
   const Mission = useSelector((store) => store.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
+    if (Mission.length === 0) {
+      dispatch(getMissions());
+    }
+  }, [Mission.length, dispatch]);
 
   return (
     <table>

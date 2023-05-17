@@ -14,7 +14,7 @@ function MissionsList({
       <td>{mission}</td>
       <td colSpan={4}>{description}</td>
       <td colSpan={4} className="member">
-        { reserve ? 'Active Member' : 'Not a Member' }
+        { reserve ? <div className="active_member">Active Member</div> : <div className="non_member">Not a Member</div> }
       </td>
       <td colSpan={6}>
         {reserve && (

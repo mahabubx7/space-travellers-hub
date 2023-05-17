@@ -192,9 +192,9 @@ button.btn-mission {
 }
 
 .btn_join {
-  background-color: #a6b3c0;
+  /* background-color: #a6b3c052; */
   color: rgb(0, 0, 0);
-  border: none;
+  border: solid black;
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
@@ -202,9 +202,9 @@ button.btn-mission {
 }
 
 .btn_leave {
-  background-color: #c94230;
-  color: white;
-  border: none;
+  /* background-color: #c94230d3; */
+  color: rgb(243, 12, 12);
+  border: solid red;
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
@@ -213,6 +213,25 @@ button.btn-mission {
 
 .member {
   width: 130px;
+}
+
+.active_member,
+.non_member {
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.active_member {
+  background-color: rgb(24, 162, 184);
+  color: white;
+}
+
+.non_member {
+  background-color: #515253;
+  color: rgb(248, 247, 247);
 }
 
 /* === RESPONSIVE CSS === */
