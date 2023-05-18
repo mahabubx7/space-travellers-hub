@@ -16,8 +16,8 @@ export const Missions = () => {
         <tr>
           <th>Mission</th>
           <th colSpan={5}>Description</th>
-          <th>Status</th>
-          <th>Join/Leave</th>
+          <th className="member">Status</th>
+          <th>.</th>
         </tr>
       </thead>
       <tbody>
