@@ -19,6 +19,23 @@ const getDragons = createAsyncThunk('getDragons', async () => {
   }
 });
 
+export const getRockets = createAsyncThunk('getRockets', async () => {
+  try {
+    const res = await axios.get('https://api.spacexdata.com/v3/rockets');
+    return res.data.map((rocket) => (
+      {
+        id: rocket.rocket_id,
+        name: rocket.rocket_name,
+        type: rocket.rocket_type,
+        flickr_images: rocket.flickr_images[0],
+        description: rocket.description,
+      }
+    ));
+  } catch (err) {
+    throw new Error(err);
+  }
+});
+
 export const getMissions = createAsyncThunk('getMissions', async () => {
   try {
     const res = await axios.get('https://api.spacexdata.com/v3/missions');

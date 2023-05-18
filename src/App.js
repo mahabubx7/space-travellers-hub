@@ -2,8 +2,8 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Missions } from './components/Missions';
-import { MyProfile } from './components/MyProfile';
-import { Rockets } from './components/Rockets';
+import MyProfile from './components/MyProfile';
+import Rockets from './components/Rockets';
 import DragonsList from './components/DragonsList';
 
 function App() {

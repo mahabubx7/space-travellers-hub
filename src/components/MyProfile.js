@@ -1,12 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import styles from './MyProfile.module.css';
 
 const MyProfile = () => {
   const rockets = useSelector((state) => state.rockets);
   const data = rockets.data.filter((rocket) => rocket.reserved === true);
-  const { value } = useSelector((state) => state.dragons);
-  const reservedDragons = value.filter((item) => item.reserved);
 
   return (
     <div className="profile-page">
@@ -27,14 +24,6 @@ const MyProfile = () => {
           </ul>
         ) : (<p>Empty rocket reservation!</p>)}
       </div>
-      <section>
-        <h2>My Dragons</h2>
-        <table className={styles.table}>
-          {reservedDragons.map((item) => (
-            <tr key={item.id}><td className={styles.list}>{item.name}</td></tr>
-          ))}
-        </table>
-      </section>
     </div>
   );
 };

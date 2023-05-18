@@ -23,7 +23,7 @@ function MissionsList({ mission, description, id }) {
         Active Member
       </td>
       <td colSpan={6}>
-        <button type="button" id={id}>
+        <button type="button" id={id} className="btn-mission">
           Join Mission
         </button>
       </td>

@@ -5,10 +5,10 @@ import logo from '../imgs/planet1.png';
 export const Navbar = () => (
   <div className="nav">
     <div className="container nav-container">
-      <div className="logo">
+      <NavLink to="/" className="logo">
         <div><img src={logo} alt="logo" /></div>
         <h1>Space Traveler&apos;s Hub</h1>
-      </div>
+      </NavLink>
       <div className="links">
         <NavLink to="/Rocket">Rockets</NavLink>
         <NavLink to="/Dragons">Dragons</NavLink>
