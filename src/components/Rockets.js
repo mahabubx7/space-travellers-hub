@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRockets } from '../redux/apiSlice';
 import { cancel, reserve } from '../redux/slices/rockets/RocketsSlice';
+import Loading from './Loading';
 
 const Rockets = () => {
   const {
@@ -16,7 +17,7 @@ const Rockets = () => {
   const handleReserve = (id) => dispatch(reserve(id));
   const handleCancel = (id) => dispatch(cancel(id));
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loading />;
   if (error) return <p>Some went wrong!</p>;
   return (
     <div className="rockets" data-testid="rockets">
