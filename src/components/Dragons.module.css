@@ -34,6 +34,18 @@
   cursor: pointer;
 }
 
+.btn_cancel {
+  appearance: none;
+  padding: 0.5em;
+  color: grey;
+  border: 1px solid grey;
+  width: fit-content;
+  border-radius: 0.2em;
+  margin-top: 0.6em;
+  cursor: pointer;
+  background-color: white;
+}
+
 small {
   background-color: darkturquoise;
   color: white;
