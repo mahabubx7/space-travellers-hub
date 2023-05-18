@@ -16,7 +16,7 @@ describe('dragons ', () => {
         />
       </Provider>,
     );
-    screen.debug();
+    // screen.debug();
     expect(screen.getByText('Dragon 1')).toBeInTheDocument();
   });
 });
