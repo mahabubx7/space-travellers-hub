@@ -9,25 +9,22 @@ import { setupServer } from 'msw/node';
 // handler
 const handlers = [
   // for rocket-api
-  rest.get('https://api.spacexdata.com/v3/rockets', (req, res, ctx) =>
-    // mock successful response: only 2 rocket items
-    res(ctx.status(200), ctx.json([
-      {
-        rocket_id: 'falcon1',
-        rocket_name: 'Falcon 1',
-        rocket_type: 'rocket',
-        flickr_images: ['img_link', ''],
-        description: 'The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009.',
-      },
-      {
-        rocket_id: 'falcon2',
-        rocket_name: 'Falcon 2',
-        rocket_type: 'rocket',
-        flickr_images: ['img_link', ''],
-        description: 'The Falcon 2 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009.',
-      },
-    ]), ctx.delay(30))),
-  // add the rest of the api endpoints here ...
+  rest.get('https://api.spacexdata.com/v3/rockets', (req, res, ctx) => res(ctx.status(200), ctx.json([
+    {
+      rocket_id: 'falcon1',
+      rocket_name: 'Falcon 1',
+      rocket_type: 'rocket',
+      flickr_images: ['img_link', ''],
+      description: 'The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009.',
+    },
+    {
+      rocket_id: 'falcon2',
+      rocket_name: 'Falcon 2',
+      rocket_type: 'rocket',
+      flickr_images: ['img_link', ''],
+      description: 'The Falcon 2 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009.',
+    },
+  ]), ctx.delay(30))),
 ];
 
 // server
