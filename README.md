@@ -1,6 +1,10 @@
-![](https://img.shields.io/badge/Space_Cars-purple)
+![](https://img.shields.io/badge/Space_Traveler's_Hub-purple)
 
-### User Interface
+<div align="center">
+
+  <h3><b>Space Traveler's Hub</b></h3>
+
+</div>
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -26,9 +30,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 🧑‍💻  Space Cars <a name="about-project"></a>
+# 🧑‍💻 Space Traveler's Hub <a name="about-project"></a>
 
-> ** Space Cars is designed to make space travel more accessible than ever before. The app allows users to reserve flights on a various spacecrafts and get information on space-related activities.Built using React and Redux (state management).**
+> ** Space Traveler's Hub is designed to make space travel more accessible than ever before. The app allows users to reserve flights on a various spacecrafts and get information on space-related activities.Built using React and Redux (state management).**
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -149,7 +153,7 @@ npx stylelint "**/*.{css,scss}"
 #### 👤 **Ikenna Richard**
 
 - Github: [Richard](https://github.com/ikennarichard)
-- LinkedIn: [Richard](https://linkedin.com/in/ikenna-oguejiofor-38076a237)
+- LinkedIn: [Richard](https://linkedin.com/in/ikenna-richard)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

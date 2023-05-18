@@ -17,7 +17,7 @@ const MyProfile = () => {
           <ul className="profile-list">
             {missionData.map((mission) => <li key={mission.id}>{mission.name}</li>)}
           </ul>
-        ) : (<p className="profile-list">No Mission join yet!</p>)}
+        ) : (<p className="profile-list">No Mission yet!</p>)}
       </div>
       <div className="rockets info-card">
         <h3>my rockets</h3>
