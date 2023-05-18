@@ -18,7 +18,7 @@ export const Missions = () => {
         <tr className="top">
           <th>Mission</th>
           <th colSpan={5}>Description</th>
-          <th className="member">Status</th>
+          <th colSpan={4}>Status</th>
           <th>.</th>
         </tr>
       </thead>
