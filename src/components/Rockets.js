@@ -25,7 +25,12 @@ const Rockets = () => {
           <img src={rocket.flickr_images} alt="rocket-img" />
           <div className="rocket-info">
             <h3>{rocket.name}</h3>
-            <p>{rocket.description}</p>
+            {rocket.reserved ? (
+              <p>
+                <span className="reserved">reserved</span>
+                {rocket.description}
+              </p>
+            ) : (<p>{rocket.description}</p>)}
             <p>
               {rocket.reserved && <button type="button" className="btn-reserve booked" onClick={() => handleCancel(rocket.id)}>cancel reservation</button>}
               {!rocket.reserved && <button type="button" className="btn-reserve" onClick={() => handleReserve(rocket.id)}>reserve rocket</button>}

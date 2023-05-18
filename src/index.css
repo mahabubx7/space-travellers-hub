@@ -72,6 +72,15 @@ hr {
   gap: 0;
 }
 
+.reserved {
+  background-color: #3491ae;
+  color: white;
+  padding: 0.125rem 0.3rem;
+  margin-right: 5px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
 .btn-reserve {
   background-color: #067ff1;
   padding: 0.75rem 1.25rem;
