@@ -172,6 +172,7 @@ hr {
 table {
   width: 100%;
   border: 1px solid rgb(233, 232, 232);
+  border-collapse: collapse;
 }
 
 tr,
@@ -179,6 +180,15 @@ td {
   border: 1px solid rgb(233, 232, 232);
   padding: 5px;
   text-align: center;
+}
+
+tr:nth-of-type(odd) {
+  background-color: rgb(241, 239, 239);
+}
+
+.top th {
+  background-color: white;
+  padding: 15px;
 }
 
 button.btn-mission {
@@ -191,8 +201,45 @@ button.btn-mission {
   width: 120px;
 }
 
+.btn_join,
+.btn_leave {
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.btn_join {
+  color: rgb(0, 0, 0);
+  border: solid black;
+}
+
+.btn_leave {
+  color: rgb(243, 12, 12);
+  border: solid red;
+}
+
 .member {
   width: 130px;
+}
+
+.active_member,
+.non_member {
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.active_member {
+  background-color: rgb(24, 162, 184);
+  color: white;
+}
+
+.non_member {
+  background-color: #515253;
+  color: rgb(248, 247, 247);
 }
 
 /* === RESPONSIVE CSS === */

@@ -19,9 +19,9 @@ const Rockets = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Some went wrong!</p>;
   return (
-    <div className="rockets">
+    <div className="rockets" data-testid="rockets">
       {data.map((rocket) => (
-        <div key={rocket.id} className="rocket-item">
+        <div key={rocket.id} className="rocket-item" data-testid="rocket-item">
           <img src={rocket.flickr_images} alt="rocket-img" />
           <div className="rocket-info">
             <h3>{rocket.name}</h3>

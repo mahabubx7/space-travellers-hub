@@ -7,17 +7,19 @@ export const Missions = () => {
   const Mission = useSelector((store) => store.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
+    if (Mission.length === 0) {
+      dispatch(getMissions());
+    }
+  }, [Mission.length, dispatch]);
 
   return (
     <table>
       <thead>
-        <tr>
+        <tr className="top">
           <th>Mission</th>
           <th colSpan={5}>Description</th>
-          <th>Status</th>
-          <th>Join/Leave</th>
+          <th className="member">Status</th>
+          <th>.</th>
         </tr>
       </thead>
       <tbody>
@@ -27,6 +29,7 @@ export const Missions = () => {
             mission={mission.name}
             description={mission.description}
             id={mission.id}
+            reserve={mission.reserved}
           />
         ))}
       </tbody>
