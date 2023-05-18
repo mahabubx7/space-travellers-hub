@@ -13,7 +13,7 @@ describe('it should show data pass', () => {
               key={2}
               mission="mission"
               description="involve"
-              id={'2'}
+              id="2"
               reserve
             />
           </tbody>
