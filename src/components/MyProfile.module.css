@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.table {
+  border-collapse: collapse;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.list {
+  list-style: none;
+  text-transform: capitalize;
+  text-align: left;
+  padding: 1em 1em;
+  border-color: rgb(185, 185, 185);
+}
