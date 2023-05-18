@@ -15,7 +15,7 @@ export const Missions = () => {
   return (
     <table>
       <thead>
-        <tr>
+        <tr className="top">
           <th>Mission</th>
           <th colSpan={5}>Description</th>
           <th className="member">Status</th>

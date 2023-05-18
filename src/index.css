@@ -172,6 +172,7 @@ hr {
 table {
   width: 100%;
   border: 1px solid rgb(233, 232, 232);
+  border-collapse: collapse;
 }
 
 tr,
@@ -179,6 +180,15 @@ td {
   border: 1px solid rgb(233, 232, 232);
   padding: 5px;
   text-align: center;
+}
+
+tr:nth-of-type(odd) {
+  background-color: rgb(241, 239, 239);
+}
+
+.top th {
+  background-color: white;
+  padding: 15px;
 }
 
 button.btn-mission {
