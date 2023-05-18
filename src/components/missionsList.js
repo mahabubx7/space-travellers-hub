@@ -12,7 +12,10 @@ function MissionsList({
   return (
     <tr>
       <td>{mission}</td>
-      <td colSpan={4}>{description}</td>
+      <td colSpan={4} className="description">
+        {description}
+        {' '}
+      </td>
       <td colSpan={4} className="member">
         { reserve ? <div className="active_member">Active Member</div> : <div className="non_member">Not a Member</div> }
       </td>

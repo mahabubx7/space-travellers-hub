@@ -214,7 +214,7 @@ table {
 
 tr,
 td {
-  border: 1px solid rgb(233, 232, 232);
+  border: 1px solid rgb(209, 207, 207);
   padding: 5px;
   text-align: center;
 }
@@ -226,6 +226,7 @@ tr:nth-of-type(odd) {
 .top th {
   background-color: white;
   padding: 15px;
+  border: 1px rgb(209, 207, 207) solid;
 }
 
 button.btn-mission {
@@ -240,15 +241,16 @@ button.btn-mission {
 
 .btn_join,
 .btn_leave {
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
   cursor: pointer;
-  padding: 10px;
+  padding: 0.5rem 0.75rem;
+  min-width: 120px;
 }
 
 .btn_join {
   color: rgb(0, 0, 0);
-  border: solid black;
+  border: solid rgb(134, 133, 133);
 }
 
 .btn_leave {
@@ -257,16 +259,17 @@ button.btn-mission {
 }
 
 .member {
-  width: 130px;
+  padding: 0.3rem 0.75rem;
 }
 
 .active_member,
 .non_member {
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
   cursor: pointer;
-  padding: 10px;
+  padding: 0.25rem;
+  min-width: 110px;
 }
 
 .active_member {
@@ -277,6 +280,12 @@ button.btn-mission {
 .non_member {
   background-color: #515253;
   color: rgb(248, 247, 247);
+  text-transform: uppercase;
+}
+
+.description {
+  padding-bottom: 22px;
+  text-align: left;
 }
 
 /* === Keyframes === */
