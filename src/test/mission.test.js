@@ -7,13 +7,17 @@ describe('it should show data pass', () => {
   it('render mission information', () => {
     render(
       <Provider store={store}>
-        <MissionsList
-          key={2}
-          mission="mission"
-          description="involve"
-          id={2}
-          reserve
-        />
+        <table>
+          <tbody>
+            <MissionsList
+              key={2}
+              mission="mission"
+              description="involve"
+              id="2"
+              reserve
+            />
+          </tbody>
+        </table>
       </Provider>,
     );
     expect(screen.getByText('mission')).toBeInTheDocument();
