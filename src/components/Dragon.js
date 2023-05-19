@@ -22,7 +22,7 @@ export default function Dragon({
             {reserved && <small className="reserved">Reserved</small>}
             {description}
           </p>
-          {reserved ? <button className={styles.btn_cancel} type="button" onClick={() => handleClick(id)}>Cancel Reservation</button> : <button type="button" className={styles.btn} onClick={() => handleClick(id)}>Reserve Rocket</button>}
+          {reserved ? <button className={styles.btn_cancel} type="button" onClick={() => handleClick(id)}>Cancel Reservation</button> : <button type="button" className={styles.btn} onClick={() => handleClick(id)}>Reserve Dragon</button>}
         </div>
       </figure>
     </li>

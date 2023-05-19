@@ -12,7 +12,7 @@ describe('Unit Tests: for the Rocket component', () => {
         <Rockets />
       </Provider>,
     );
-    expect(screen.getByText(/loading/i)).toBeInTheDocument();
+    expect(screen.getByTestId('loading')).toBeInTheDocument();
     expect(screen.queryByText(/Some went wrong!/i)).not.toBeInTheDocument();
     expect(await waitFor(() => container.findByTestId('rockets'))).toBeInTheDocument();
   });

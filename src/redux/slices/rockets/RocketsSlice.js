@@ -14,18 +14,14 @@ export const rocketSlice = createSlice({
   reducers: {
     reserve: (state, { payload }) => {
       const newState = state.data.map((rocket) => {
-        if (rocket.id !== payload) {
-          return rocket;
-        }
+        if (rocket.id !== payload) return rocket;
         return { ...rocket, reserved: true };
       });
       return { ...state, data: [...newState] };
     },
     cancel: (state, { payload }) => {
       const newState = state.data.map((rocket) => {
-        if (rocket.id === payload) {
-          return { ...rocket, reserved: false };
-        }
+        if (rocket.id === payload) return { ...rocket, reserved: false };
         return rocket;
       });
       return { ...state, data: [...newState] };
