@@ -24,7 +24,7 @@ describe('DragonsList', () => {
     useDispatch.mockReturnValue(jest.fn());
   });
 
-  it('renders the list correctly', async () => {
+  it('renders the list correctly', () => {
     render(<DragonsList />);
     expect(screen.getByText('Dragon 1')).toBeInTheDocument();
     expect(screen.getByText('Dragon 2')).toBeInTheDocument();
