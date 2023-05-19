@@ -42,6 +42,8 @@
   <summary>Client</summary>
   <ul>
     <li>React</li>
+    <li>Redux</li>
+    <li>Redux Toolkit</li>
   </ul>
 </details>
 
@@ -74,7 +76,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [**Live Demo**](https://space-cars.netlify.app/)
+- [**Live Demo**](https://space-traveller-hub.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +111,7 @@ npm install
 
 ### Usage
 To run the project, execute the following command:
-```sh
+```bash
   npm start
 ```
 
@@ -117,19 +119,18 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 #### Jest Test
-```sh
+```bash
   npm test
   ```
 
-#### Stylint
-```sh
-npx stylelint "**/*.{css,scss}"
+#### Lints
+```bash
+npm run lint
 ```
-
-#### Eslint
-```sh
-  npx eslint "**/*.{js,jsx}"
-  ```
+or 
+```bash
+npm run lint:fix
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,9 +140,9 @@ npx stylelint "**/*.{css,scss}"
 
 #### 👤 **Mahabub Alam**
 
-- GitHub: [Mahabub](https://github.com/mahabubx7)
-- Twitter: [Mahabub](https://twitter.com/mahabub__7)
-- Linkedin: [Mahabub](https://www.linkedin.com/in/mahabubx7)
+- GitHub: [mahabubx7](https://github.com/mahabubx7)
+- Twitter: [@mahabub__7](https://twitter.com/mahabub__7)
+- Linkedin: [in/mahabubx7](https://www.linkedin.com/in/mahabubx7)
 
 #### 👤 **Drissas Touré**
 
