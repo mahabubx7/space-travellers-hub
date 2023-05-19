@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { useSelector, useDispatch } from 'react-redux';
 import DragonsList from '../components/DragonsList';
