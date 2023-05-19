@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Space_Traveler's_Hub-purple)
+![](https://img.shields.io/badge/Space_Traveler's_Hub-purple) [![Netlify Status](https://api.netlify.com/api/v1/badges/1b578c75-f62a-4b8e-b753-1779916cc2b4/deploy-status)](https://app.netlify.com/sites/space-cars/deploys)
 
 <div align="center">
 
